@@ -2,7 +2,7 @@
 
 Proyek Laravel ini mengerjakan praktikum pada PDF Modul 6. Kode mencakup relasi `belongsTo`, `hasMany`, dan `belongsToMany`, pivot table dengan foreign key cascade, factory kategori, dan seeder. Data demo disimpan pada SQLite.
 
-Checklist delapan capaian PDF ada di [docs/CHECKLIST.md](docs/CHECKLIST.md), jawaban pengamatan ada di [docs/laporan-praktikum.md](docs/laporan-praktikum.md), dan bukti berupa PNG serta log keluaran ada di `screenshots/`.
+Checklist delapan capaian PDF ada di [docs/CHECKLIST.md](docs/CHECKLIST.md). Laporan formal atas nama Herlina Dwi Septiana tersedia sebagai [DOCX](docs/Laporan-Praktikum-Modul-6.docx) dan [PDF](docs/Laporan-Praktikum-Modul-6.pdf); jawaban ringkas pengamatan ada di [docs/laporan-praktikum.md](docs/laporan-praktikum.md). Bukti berupa PNG dan log keluaran ada di `screenshots/`.
 
 PNG bukti merender keluaran Artisan/Tinker yang benar-benar dijalankan dan kode pada berkas proyek. Log teks mentah disertakan supaya hasilnya mudah dicocokkan.
 
@@ -66,6 +66,8 @@ PNG bukti dapat dibuat ulang dari log Artisan/Tinker dan kode proyek dengan `.\s
 - `database/seeders/`: data awal dan `KategoriSeeder`.
 - `scripts/tinker/`: perintah pengamatan yang dapat dijalankan melalui `php artisan tinker`.
 - `screenshots/`: gambar bukti dan log mentah yang diambil dari keluaran proyek.
+
+Laporan lengkap tersedia di `docs/Laporan-Praktikum-Modul-6.docx` dan `docs/Laporan-Praktikum-Modul-6.pdf`. Untuk membuat ulang laporan, pasang dependensi dengan `python -m pip install -r scripts/requirements-report.txt`, lalu jalankan `.\scripts\build-practicum-report.ps1` pada Windows. Proses ini menyematkan seluruh screenshot dan mencetak PDF melalui Microsoft Edge.
 
 ## Checklist
 

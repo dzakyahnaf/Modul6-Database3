@@ -19,6 +19,7 @@
 /storage/*.key
 /storage/app/PsySH/
 /storage/pail
+/scripts/.report-libs/
 /vendor
 Homestead.json
 Homestead.yaml

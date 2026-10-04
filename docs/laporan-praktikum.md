@@ -1,5 +1,8 @@
 # Laporan praktikum Modul 6
 
+**Nama:** Herlina Dwi Septiana
+Versi laporan lengkap tersedia dalam [DOCX](Laporan-Praktikum-Modul-6.docx) dan [PDF](Laporan-Praktikum-Modul-6.pdf).
+
 ## Relasi one-to-many
 
 Model `Pekerjaan` memakai `belongsTo(Perusahaan::class)` karena foreign key `perusahaan_id` berada di tabel pekerjaan. Model `Perusahaan` memakai `hasMany(Pekerjaan::class)` karena satu perusahaan bisa mempunyai beberapa pekerjaan. Data awal berisi empat pekerjaan; dua di antaranya dimiliki PT Nusa Teknologi.
@@ -14,7 +17,7 @@ Tabel `pekerjaan_kategori` mempunyai kolom `id`, `pekerjaan_id`, `kategori_id`, 
 
 ## Factory dan seeder
 
-`Kategori::factory()->make()` membuat objek di memori dan tidak mengubah jumlah baris. `Kategori::factory()->count(3)->create()` menyimpan tiga kategori. `KategoriSeeder` membuat lima kategori lain dan menghubungkan setiap pekerjaan ke dua kategori acak. Dengan empat pekerjaan, hasilnya **4 × 2 = 8 baris pivot** dari seeder.
+`Kategori::factory()->make()` membuat objek di memori dan tidak mengubah jumlah baris. `Kategori::factory()->count(3)->create()` menyimpan tiga kategori. `KategoriSeeder` membuat lima kategori lain dan menghubungkan setiap pekerjaan ke dua kategori acak. Dengan empat pekerjaan, hasilnya **4 x 2 = 8 baris pivot** dari seeder.
 
 Sesudah tiga kategori factory dan kategori `programming` dibuat seperti langkah Tinker di PDF, jumlah kategori menjadi **9** (5 dari seeder + 3 dari factory + 1 programming), sedangkan jumlah pivot menjadi **9** (8 dari seeder + 1 tautan programming). Tabel pivot tidak dihitung oleh factory; barisnya ditambahkan melalui `attach()`.
 
