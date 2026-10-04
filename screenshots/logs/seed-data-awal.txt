@@ -1,0 +1,4 @@
+﻿PS> php artisan db:seed --class=DataAwalSeeder
+
+
+   INFO  Seeding database.

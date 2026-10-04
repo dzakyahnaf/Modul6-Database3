@@ -1,0 +1,7 @@
+﻿PS> php -d auto_prepend_file=scripts/psysh-prepend.php artisan tinker scripts/tinker/04-cascade-check.php --execute=0
+
+array:3 [
+  "tautan kategori sebelum dihapus" => 1
+  "seluruh pivot sebelum dihapus" => 9
+  "seluruh pivot sesudah dihapus" => 8
+] // scripts\tinker\04-cascade-check.php:20

@@ -1,0 +1,22 @@
+﻿PS> php -d auto_prepend_file=scripts/psysh-prepend.php artisan tinker scripts/tinker/07-final-summary.php --execute=0
+
+array:4 [
+  "perusahaan" => 3
+  "pekerjaan" => 4
+  "kategori" => 9
+  "pekerjaan_kategori" => 9
+] // scripts\tinker\07-final-summary.php:7
+Illuminate\Support\Collection {#7071
+  #items: array:3 [
+    0 => "programming"
+    1 => "dolorem"
+    2 => "nesciunt"
+  ]
+  #escapeWhenCastingToString: false
+} // scripts\tinker\07-final-summary.php:17
+Illuminate\Support\Collection {#7069
+  #items: array:1 [
+    0 => "Software Engineer"
+  ]
+  #escapeWhenCastingToString: false
+} // scripts\tinker\07-final-summary.php:20

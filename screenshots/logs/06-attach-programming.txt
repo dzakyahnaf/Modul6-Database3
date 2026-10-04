@@ -1,0 +1,11 @@
+﻿PS> php -d auto_prepend_file=scripts/psysh-prepend.php artisan tinker scripts/tinker/06-attach-programming.php --execute=0
+
+Illuminate\Support\Collection {#864
+  #items: array:1 [
+    0 => "programming"
+  ]
+  #escapeWhenCastingToString: false
+} // scripts\tinker\06-attach-programming.php:13
+array:1 [
+  "pivot created_at" => "2026-10-04 11:32:02"
+] // scripts\tinker\06-attach-programming.php:21

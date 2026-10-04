@@ -1,0 +1,42 @@
+﻿PS> php -d auto_prepend_file=scripts/psysh-prepend.php artisan tinker scripts/tinker/08-schema.php --execute=0
+
+array:1 [
+  "foreign keys aktif" => array:1 [
+    0 => {#6367
+      +"foreign_keys": 1
+    }
+  ]
+] // scripts\tinker\08-schema.php:8
+array:1 [
+  "kolom pivot" => array:5 [
+    0 => "id"
+    1 => "pekerjaan_id"
+    2 => "kategori_id"
+    3 => "created_at"
+    4 => "updated_at"
+  ]
+] // scripts\tinker\08-schema.php:9
+array:1 [
+  "foreign key pivot" => array:2 [
+    0 => {#6366
+      +"id": 0
+      +"seq": 0
+      +"table": "kategoris"
+      +"from": "kategori_id"
+      +"to": "id"
+      +"on_update": "NO ACTION"
+      +"on_delete": "CASCADE"
+      +"match": "NONE"
+    }
+    1 => {#864
+      +"id": 1
+      +"seq": 0
+      +"table": "pekerjaan"
+      +"from": "pekerjaan_id"
+      +"to": "id"
+      +"on_update": "NO ACTION"
+      +"on_delete": "CASCADE"
+      +"match": "NONE"
+    }
+  ]
+] // scripts\tinker\08-schema.php:10

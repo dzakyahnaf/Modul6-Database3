@@ -1,0 +1,20 @@
+﻿PS> php -d auto_prepend_file=scripts/psysh-prepend.php artisan tinker scripts/tinker/02-lazy-loading.php --execute=0
+
+"PT Nusa Teknologi" // scripts\tinker\02-lazy-loading.php:12
+array:2 [
+  0 => array:4 [
+    "query" => "select * from "pekerjaan" limit 1"
+    "bindings" => []
+    "time" => 1.33
+    "readWriteType" => "write"
+  ]
+  1 => array:4 [
+    "query" => "select * from "perusahaan" where "perusahaan"."id" = ? limit 1"
+    "bindings" => array:1 [
+      0 => 1
+    ]
+    "time" => 0.09
+    "readWriteType" => "write"
+  ]
+] // scripts\tinker\02-lazy-loading.php:13
+2 // scripts\tinker\02-lazy-loading.php:14

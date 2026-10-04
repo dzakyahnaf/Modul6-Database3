@@ -1,0 +1,19 @@
+﻿PS> php -d auto_prepend_file=scripts/psysh-prepend.php artisan tinker scripts/tinker/01-one-to-many.php --execute=0
+
+array:3 [
+  "id" => 1
+  "title" => "Software Engineer"
+  "perusahaan_id" => 1
+] // scripts\tinker\01-one-to-many.php:7
+array:2 [
+  "id" => 1
+  "nama" => "PT Nusa Teknologi"
+] // scripts\tinker\01-one-to-many.php:8
+"PT Nusa Teknologi" // scripts\tinker\01-one-to-many.php:9
+Illuminate\Support\Collection {#6372
+  #items: array:2 [
+    0 => "Software Engineer"
+    1 => "Data Analyst"
+  ]
+  #escapeWhenCastingToString: false
+} // scripts\tinker\01-one-to-many.php:12

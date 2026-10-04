@@ -1,0 +1,19 @@
+﻿PS> php -d auto_prepend_file=scripts/psysh-prepend.php artisan tinker scripts/tinker/05-factory-make-create.php --execute=0
+
+array:1 [
+  "name" => "qui"
+] // scripts\tinker\05-factory-make-create.php:6
+array:1 [
+  "make tersimpan" => false
+] // scripts\tinker\05-factory-make-create.php:7
+Illuminate\Support\Collection {#6371
+  #items: array:3 [
+    0 => "repellat"
+    1 => "est"
+    2 => "consequatur"
+  ]
+  #escapeWhenCastingToString: false
+} // scripts\tinker\05-factory-make-create.php:10
+array:1 [
+  "jumlah kategori setelah create(3)" => 3
+] // scripts\tinker\05-factory-make-create.php:11

@@ -1,0 +1,6 @@
+﻿
+   INFO  Running migrations.  
+
+  2026_10_04_000003_create_kategoris_and_pekerjaan_kategori_tables ...................................... 96.04ms DONE
+
+

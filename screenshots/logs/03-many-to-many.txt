@@ -1,0 +1,16 @@
+﻿PS> php -d auto_prepend_file=scripts/psysh-prepend.php artisan tinker scripts/tinker/03-many-to-many.php --execute=0
+
+Illuminate\Support\Collection {#6368
+  #items: array:3 [
+    0 => "programming"
+    1 => "dolorem"
+    2 => "nesciunt"
+  ]
+  #escapeWhenCastingToString: false
+} // scripts\tinker\03-many-to-many.php:6
+Illuminate\Support\Collection {#7494
+  #items: array:1 [
+    0 => "Software Engineer"
+  ]
+  #escapeWhenCastingToString: false
+} // scripts\tinker\03-many-to-many.php:9
